@@ -154,6 +154,15 @@ td {
     font-weight: 500;
 }
 
+.label-red {
+    background-color: #ff0000; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    font-size: 14px; 
+    color: #014935; 
+    font-weight: 500;
+}
+
 .label-blue {
     background-color: #a7d3f3; 
     padding: 10px 20px; 
@@ -170,4 +179,24 @@ td {
     font-size: 14px; 
     color: #014935; 
     font-weight: 500;
+}
+
+.relative{
+    position: relative;
+}
+
+.addon-right{
+    position: absolute;
+    right: 22px;
+    top : 0;
+    transform: translateY(75%);
+    font-size: small;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
 }

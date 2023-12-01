@@ -10,8 +10,12 @@ import DetailUser from '../views/user/detail'
 // Product
 import Product from '../views/product/list'
 
-import Catalog from '../views/index'
-import Cart from '../views/cart'
+// Plannogram
+import Plannogram from '../views/plannogram/list'
+import CreatePlannogram from '../views/plannogram/create'
+import EditPlannogram from '../views/plannogram/edit'
+import DetailPlannogram from '../views/plannogram/detail'
+
 
 Vue.use(Router)
 
@@ -19,13 +23,8 @@ export default new Router({
 	routes: [
 		{
 			path: '/',
-			name: 'catalog',
-			component: Catalog
-		},
-		{
-			path: '/cart',
-			name: 'cart',
-			component: Cart
+			name: 'list-user',
+			component: User
 		},
 		{
 			path: '/list-user',
@@ -51,6 +50,28 @@ export default new Router({
 			path: '/list-product',
 			name: 'list-product',
 			component: Product
+		},
+
+		//Plannogram
+		{
+			path: '/list-plannogram',
+			name: 'list-plannogram',
+			component: Plannogram
+		},
+		{
+			path: '/create-plannogram',
+			name: 'create-plannogram',
+			component: CreatePlannogram
+		},
+		{
+			path: '/edit-plannogram',
+			name: 'edit-plannogram',
+			component: EditPlannogram
+		},
+		{
+			path: '/detail-plannogram',
+			name: 'detail-plannogram',
+			component: DetailPlannogram
 		}
 	]
 })

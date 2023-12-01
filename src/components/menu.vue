@@ -30,7 +30,7 @@
                 </router-link>
             </div>
             <div class="col center">
-                <router-link to="/cart">
+                <router-link to="/list-plannogram">
                     <div>
                         Plannogram<hr class="uline-grey">
                     </div>
