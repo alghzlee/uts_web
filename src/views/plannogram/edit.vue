@@ -17,7 +17,7 @@
                 <div class="w20">
                     <label class="form-label">Plannogram Name</label>
                 </div>
-                <div class="container relative">
+                <div class="w80 container relative">
                     <input class="form-text" type="text" minlength="5" maxlength="20"
                         placeholder="Masukkan Plannogram Name">
                     <span class="addon-right">| 5 / 20</span>
@@ -27,12 +27,13 @@
                 <div class="w20">
                     <label class="form-label">Broadcast Schedule</label>
                 </div>
-                <div class="w80">
+                <div class="w80 container relative">
                     <input
                         class="form-text"
                         type="text"
-                        placeholder="Input your username"
+                        placeholder="Pilih hari"
                     >
+                    <img class="addon-right-image" src="../../assets/icons/change.svg">
                 </div>
             </div>
             <div class="mt30 row">
@@ -43,25 +44,37 @@
                     <input
                         class="form-text"
                         type="text"
-                        placeholder="Input your email"
+                        placeholder="Masukkan Tanggal"
                     >
                 </div>
             </div>
             <div class="mt30 row">
                 <div class="w20">
-                    <label class="form-label">Roles</label>
+                    <label class="form-label">Valid Until</label>
+                </div>
+                <div class="w80">
+                    <input
+                        class="form-text"
+                        type="text"
+                        placeholder="Masukkan Tanggal"
+                    >
+                </div>
+            </div>
+            <div class="mt30 row">
+                <div class="w20">
+                    <label class="form-label">List Product</label>
                 </div>
                 <div class="w80">
                     <select class="form-select">
-                        <option disabled selected>--- Select Role ---</option>
-                        <option value="1">Super Admin</option>
-                        <option value="2">Marketing</option>
-                        <option value="3">Sales</option>
+                        <option disabled selected>--- Select Product ---</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
                     </select>
                 </div>
             </div>
             <div class="flex mt30">
-                <router-link to="/list-user">
+                <router-link to="/list-plannogram">
                     <button class="bt-submit-green">Update User</button>
                 </router-link>
             </div>

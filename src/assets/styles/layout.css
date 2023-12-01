@@ -180,3 +180,12 @@
 .right{
     text-align: right;
 }
+
+/* image align*/
+.addon-right-image{
+    position: absolute;
+    right: 10px;
+    top : 0;
+    transform: translateY(70%);
+    font-size: small;
+}

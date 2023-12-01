@@ -19,7 +19,7 @@
                 </div>
                 <div class="w80 relative">
                     <input class="hidden" type="file" id="upload-file" />
-                    <img class="cursor-pointer" src="../../assets/icons/tambahFoto.png" alt="" @click="upload_file()">
+                    <img class="cursor-pointer" src="../../assets/icons/addPhoto.svg" alt="" @click="upload_file()">
                 </div>
             </div>
             <div class="mt30 row">
@@ -71,10 +71,10 @@
                 </div>
                 <div class="w80">
                     <select class="form-select">
-                        <option disabled selected>--- Select Role ---</option>
-                        <option value="1">Super Admin</option>
-                        <option value="2">Marketing</option>
-                        <option value="3">Sales</option>
+                        <option disabled selected>--- Select Product ---</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
                     </select>
                 </div>
             </div>

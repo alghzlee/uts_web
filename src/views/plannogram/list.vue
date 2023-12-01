@@ -41,7 +41,15 @@
                     <tbody>
                         <tr v-for="item of list_plannogram" :key="item.id">
                             <td class="center">{{ item.plannogram_name }}</td>
-                            <td class="center">{{ item.background_image }}</td>
+                            <td class="center">
+                                
+                                <div v-if="item.background_image === 1">
+                                    <img src="../../assets/images/flashSale.svg">
+                                </div>
+                                <div v-else="item.background_image === 2">
+                                    <img src="../../assets/images/iphX.svg">
+                                </div>
+                            </td>
                             <td class="center">{{ item.broadcast_schedule }}</td>
                             <td class="center"><label Class="label-green">{{ item.valid_from }}</label></td>
                             <td class="center"><label Class="label-green">{{ item.valid_until }}</label></td>
@@ -49,7 +57,7 @@
                                 <div v-if="item.plannogram_status === 1">
                                     <label class="label-green">Active</label>
                                 </div>
-                                <div v-else="item.plannogram_statusl">
+                                <div v-else="item.plannogram_status">
                                     <label class="label-red">Inactive</label>
                                 </div>
                             </td>
@@ -90,7 +98,7 @@ export default {
                 {
                     id: "1",
                     plannogram_name: "Flash Sale Minggu Ini",
-                    background_image: "",
+                    background_image: 1,
                     broadcast_schedule: "Senin",
                     valid_from: "01-06-2021",
                     valid_until: "03-06-2021",
@@ -99,21 +107,22 @@ export default {
                 {
                     id: "2",
                     plannogram_name: "Produk Terbaru",
-                    background_image: "",
-                    broadcast_schedule: "Senin",
-                    valid_from: "01-06-2021",
-                    valid_until: "03-06-2021",
-                    plannogram_status: 5
-                },
-                {
-                    id: "3",
-                    plannogram_name: "Flash Sale Minggu Ini",
-                    background_image: "",
-                    broadcast_schedule: "Senin",
-                    valid_from: "01-06-2021",
-                    valid_until: "03-06-2021",
-                    plannogram_status: 3
-                    }
+                    background_image: 2,
+                    broadcast_schedule: "Rabu",
+                    valid_from: "04-06-2021",
+                    valid_until: "04-06-2021",
+                    plannogram_status: 1
+                }
+                // ,
+                // {
+                //     id: "3",
+                //     plannogram_name: "Flash Sale Minggu Ini",
+                //     background_image: 3,
+                //     broadcast_schedule: "Senin",
+                //     valid_from: "01-06-2021",
+                //     valid_until: "03-06-2021",
+                //     plannogram_status: 3
+                //     }
             ]
         }
     }

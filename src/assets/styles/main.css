@@ -135,7 +135,7 @@ td {
 
 .form-select {
     display: block;
-    width: 100%;
+    width: 100.3%;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ddd;
@@ -187,11 +187,13 @@ td {
 
 .addon-right{
     position: absolute;
-    right: 22px;
+    right: 12px;
     top : 0;
-    transform: translateY(75%);
+    transform: translateY(52%);
     font-size: small;
 }
+
+
 
 .cursor-pointer {
     cursor: pointer;
