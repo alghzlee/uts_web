@@ -12,7 +12,17 @@
                     <p class="mt5 mb20 tc-green">Increase the visibility of promotional products in our store highlights</p>
                 </div>
             </div>
+            
             <hr class="uline-grey">
+            <div class="mt50 row">
+                <div class="w20">
+                    <label class="form-label">Background image</label>
+                </div>
+                <div class="w80 relative">
+                    <input class="hidden" type="file" id="upload-file" />
+                    <img class="cursor-pointer" src="../../assets/icons/addPhoto.svg" alt="" @click="upload_file()">
+                </div>
+            </div>
             <div class="mt30 row">
                 <div class="w20">
                     <label class="form-label">Plannogram Name</label>
@@ -27,13 +37,17 @@
                 <div class="w20">
                     <label class="form-label">Broadcast Schedule</label>
                 </div>
-                <div class="w80 container relative">
-                    <input
-                        class="form-text"
-                        type="text"
-                        placeholder="Pilih hari"
-                    >
-                    <img class="addon-right-image" src="../../assets/icons/change.svg">
+                <div class="w80">
+                    <select class="form-select">
+                        <option disabled selected>Pilih Hari</option>
+                        <option value="1">Senin</option>
+                        <option value="2">Selasa</option>
+                        <option value="3">Rabu</option>
+                        <option value="4">Kamis</option>
+                        <option value="5">Jumat</option>
+                        <option value="6">Sabtu</option>
+                        <option value="7">Minggu</option>
+                    </select>
                 </div>
             </div>
             <div class="mt30 row">
@@ -41,11 +55,7 @@
                     <label class="form-label">Valid From</label>
                 </div>
                 <div class="w80">
-                    <input
-                        class="form-text"
-                        type="text"
-                        placeholder="Masukkan Tanggal"
-                    >
+                    <input class="form-text" type="date" placeholder="Masukkan Tanggal">
                 </div>
             </div>
             <div class="mt30 row">
@@ -53,11 +63,7 @@
                     <label class="form-label">Valid Until</label>
                 </div>
                 <div class="w80">
-                    <input
-                        class="form-text"
-                        type="text"
-                        placeholder="Masukkan Tanggal"
-                    >
+                    <input class="form-text" type="date" placeholder="Masukkan Tanggal">
                 </div>
             </div>
             <div class="mt30 row">

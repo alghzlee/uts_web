@@ -35,6 +35,7 @@
 }
 .mt20{
     margin-top: 20px;
+    display: flex;
 }
 .mt30{
     margin-top: 30px;
